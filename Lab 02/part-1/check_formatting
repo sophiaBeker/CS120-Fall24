@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# ************************************************************************
+# * Dear Student - there is nothing in this file that you need to change.*
+# * Please do not make changes to this file.                             *
+# ************************************************************************
+
+SCRIPTPATH=`cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P `
+CWD=`pwd`
+TARGETDIR=`dirname $SCRIPTPATH`
+cd $TARGETDIR
+make -f .Makefile format
+cd $CWD
